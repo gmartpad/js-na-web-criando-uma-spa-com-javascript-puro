@@ -1,4 +1,7 @@
-
+import { 
+  deletaCliente, 
+  listarClientes
+} from '../../api/cliente';
 
 const removeCliente = (id) => {
   if(confirm("Deseja deletar o cliente ?")){

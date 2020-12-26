@@ -30,7 +30,6 @@ const deletaCliente = id => {
     method: "DELETE",
 })}
 
-
 const detalhaCliente = id => { 
   return fetch(`http://localhost:4000/clientes/cliente/${id}`,{
     method: 'GET'
@@ -54,3 +53,10 @@ const editaCliente = (id, cpf, nome) => {
   })
 }
 
+export { 
+  listarClientes, 
+  cadastrarClientes, 
+  deletaCliente, 
+  detalhaCliente, 
+  editaCliente 
+}
