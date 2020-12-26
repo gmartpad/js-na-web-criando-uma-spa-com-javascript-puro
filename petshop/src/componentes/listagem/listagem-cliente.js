@@ -1,8 +1,7 @@
-
+import { deletaCliente, listarClientes} from '../../api/cliente.js'
 
 const removeCliente = (id) => {
   if(confirm("Deseja deletar o cliente ?")){
-    debugger;
     deletaCliente(id)
     window.location.reload()
   }
