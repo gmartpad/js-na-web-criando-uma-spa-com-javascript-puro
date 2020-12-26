@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "webpack": "^5.11.0",
-    "webpack-cli": "^4.3.0"
+  "dependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
