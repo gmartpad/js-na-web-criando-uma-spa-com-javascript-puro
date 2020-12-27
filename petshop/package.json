@@ -9,7 +9,9 @@
     "webpack-dev-server": "^3.10.3"
   },
   "devDependencies": {
-    "html-webpack-plugin": "^4.5.0"
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^2.0.0"
   },
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
