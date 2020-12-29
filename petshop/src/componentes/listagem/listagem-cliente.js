@@ -32,6 +32,12 @@ tabela.classList.add('table');
 
 container.appendChild(tabela);
 
+const novoCliente = document.querySelector('.btn');
+
+novoCliente.addEventListener('click', ()=>{
+  inicializaCadastro();
+})
+
 const corpoTabela = document.createElement('tbody');
 
 const exibeCliente = (cpf, nome, id) => {

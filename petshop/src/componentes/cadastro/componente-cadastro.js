@@ -1,3 +1,5 @@
+import { cadastrarClientes } from "../../api/cliente";
+
 const { default: eventoEnvia } = require("./cadastro-clientes");
 
 const form = document.createElement('form');
@@ -15,9 +17,12 @@ const cadastro = `
       <button type="submit" class="btn btn-primary">Enviar</button>
     </div>`;
 
+form.innerHTML = cadastro;
+
 const inicializaCadastro = () => {
   const container = document.querySelector('[data-container]');
   eventoEnvia(form);
+  container.innerHTML = ``;
   container.appendChild(form);
   return form;
 
